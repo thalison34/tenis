@@ -3,63 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site com Imagens</title>
+    <title>Meu Site com Estilo Nike</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #000;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000;
+            text-transform: uppercase;
         }
         .image-gallery {
             display: flex;
-            flex-direction: column; /* Altera o layout para coluna */
-            gap: 10px;
-            align-items: center; /* Centraliza as imagens horizontalmente */
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
         }
         .image-gallery img {
             max-width: 100%;
             height: auto;
-            border: 2px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background-color: #333333;
-            color: #ffffff;
+            background-color: #000;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo ao Meu Site</h1>
+        <h1>Meu Site Esportivo</h1>
     </header>
 
     <div class="container">
         <h2>Galeria de Imagens</h2>
         <div class="image-gallery">
             <!-- Adicione suas imagens aqui -->
-            <img src="https://images.tcdn.com.br/img/img_prod/740066/nike_kd_17_christmas_pack_5103_1_c30cdfe057d0ab69f498c45bdc29440c.jpg" alt="Descrição da Imagem 1">
-            <img src="https://static.netshoes.com.br/produtos/tenis-nike-kd-trey-5-x-masculino/28/JD8-1674-128/JD8-1674-128_zoom1.jpg?ts=1674563655&ims=544x" alt="Descrição da Imagem 2">
-            <img src="https://sneakerbardetroit.com/wp-content/uploads/2022/07/PUMA-MB.01-Lo-Team-Colors-Pack-Release-Date.jpeg" alt="Descrição da Imagem 3">
+            <img src="https://images.tcdn.com.br/img/img_prod/740066/nike_kd_17_christmas_pack_5103_1_c30cdfe057d0ab69f498c45bdc29440c.jpg" alt="Tênis Nike KD 17 Christmas Pack">
+            <img src="https://static.netshoes.com.br/produtos/tenis-nike-kd-trey-5-x-masculino/28/JD8-1674-128/JD8-1674-128_zoom1.jpg?ts=1674563655&ims=544x" alt="Tênis Nike KD Trey 5 X">
+            <img src="https://sneakerbardetroit.com/wp-content/uploads/2022/07/PUMA-MB.01-Lo-Team-Colors-Pack-Release-Date.jpeg" alt="Tênis PUMA MB.01">
             <!-- Adicione mais imagens conforme necessário -->
         </div>
     </div>
