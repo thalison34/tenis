@@ -43,12 +43,13 @@
         }
         .image-gallery {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
+            flex-direction: row; /* Layout em linha */
+            flex-wrap: wrap; /* Quebra de linha se necessário */
+            gap: 20px; /* Espaço entre as imagens */
+            justify-content: center; /* Centraliza as imagens */
         }
         .image-gallery img {
-            width: 250px; /* Largura fixa de 250px */
+            width: 350px; /* Largura fixa de 350px */
             height: auto; /* Altura ajustada automaticamente */
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
